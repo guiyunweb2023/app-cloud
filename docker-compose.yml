@@ -7,9 +7,16 @@ services:
       - "16200:16200"
     build: ./app-gateway
     container_name: app-gate
+    networks:
+      - common-net
   app-admin:
     image: app-admin
     ports:
       - "16201:16201"
     build: ./app-modules/app-admin
     container_name: app-admin
+    networks:
+      - common-net
+networks:
+  common-net:
+    external: true

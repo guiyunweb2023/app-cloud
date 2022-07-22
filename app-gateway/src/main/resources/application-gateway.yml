@@ -3,7 +3,7 @@ spring:
     gateway:
       routes:
         - id: ace-auth
-          uri: lb://ace-admin
+          uri: lb://app-admin
           order: 8000
           predicates:
             - RequestBody=true
@@ -11,7 +11,7 @@ spring:
           filters:
             - StripPrefix=2
         - id: ace-admin
-          uri: lb://ace-admin
+          uri: lb://app-admin
           order: 8001
           predicates:
             - RequestBody=true

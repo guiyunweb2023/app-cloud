@@ -5,16 +5,16 @@ spring:
     name: app-admin
   cloud:
     nacos:
-      server-addr: 127.0.0.1:8848
+      server-addr: common-nacos:8848
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/db_app_admin?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql://common-mysql:3306/db_app_admin?useUnicode=true&characterEncoding=UTF8
     username: root
-    password: 123456
+    password: Meng.8626823
   redis:
     database: 1
-    host: localhost
+    host: common-redis
     port: 6379
     jedis:
       pool:
