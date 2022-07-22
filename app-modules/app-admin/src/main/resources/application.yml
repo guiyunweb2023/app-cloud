@@ -1,0 +1,35 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: app-admin
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/db_app_admin?useUnicode=true&characterEncoding=UTF8
+    username: root
+    password: 123456
+  redis:
+    database: 1
+    host: localhost
+    port: 6379
+    jedis:
+      pool:
+        max-active: 20
+
+
+auth:
+  serviceId: app-admin
+  user:
+    token-header: Authorization
+  client:
+    id: app-sample  #不填则默认读取spring.application.name
+    secret: 123456
+
+jwt:
+  token-header: Authorization
+  expire: 14400
+  rsa-secret: xx1WET12^%3^(WE45

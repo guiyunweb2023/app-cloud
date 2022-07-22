@@ -1,0 +1,12 @@
+plugins {
+    id 'org.example.java-conventions'
+}
+
+description = 'app-api'
+
+dependencies {
+}
+
+test {
+    useJUnitPlatform()
+}

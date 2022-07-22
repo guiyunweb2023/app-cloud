@@ -1,0 +1,40 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: app-gateway
+  profiles:
+    active: gateway
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8848
+feign:
+  httpclient:
+    enabled: false
+  okhttp:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+      mime-types: text/xml,application/xml,application/json
+      min-request-size: 2048
+    response:
+      enabled: true
+
+gate:
+  ignore:
+    startWith: /auth/jwt,/auth/captcha
+
+
+auth:
+  serviceId: app-admin
+  user:
+    token-header: Authorization
+  client:
+    id: ace-gate  #不填则默认读取spring.application.name
+    secret: 123456
+
+
+ribbon:
+  okhttp:
+    enabled: false
