@@ -7,7 +7,7 @@ spring:
     active: gateway
   cloud:
     nacos:
-      server-addr: common-nacos:8848
+      server-addr: some-nacos:8848
 feign:
   httpclient:
     enabled: false

@@ -9,16 +9,17 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://common-mysql:3306/db_app_admin?useUnicode=true&characterEncoding=UTF8
+    url: jdbc:mysql://some-mysql:3306/db_app_admin?useUnicode=true&characterEncoding=UTF8
     username: root
-    password: Meng.8626823
+    password: mysql.mengyuanyun
   redis:
     database: 1
-    host: common-redis
+    host: some-redis
     port: 6379
     jedis:
       pool:
         max-active: 20
+    password: redis.mengyuanyun
 
 
 auth:
