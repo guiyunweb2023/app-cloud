@@ -7,8 +7,6 @@ services:
       - "16200:16200"
     build: ./app-gateway
     container_name: app-gate
-    environment:
-      WAIT_HOSTS: app-admin:16201
     networks:
       - common-net
   app-admin:
