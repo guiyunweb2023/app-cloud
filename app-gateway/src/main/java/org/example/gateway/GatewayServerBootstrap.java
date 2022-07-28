@@ -4,12 +4,14 @@ import org.example.auth.sdk.EnableAceAuthClient;
 import org.example.gateway.utils.DBLog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author ace
  * @create 2018/3/12.
  */
+@EnableDiscoveryClient
 @SpringCloudApplication
 @EnableAceAuthClient
 //TODO 切换为webclient

@@ -16,14 +16,10 @@ spring:
     database: 1
     host: some-redis
     port: 6379
+    password: redis.mengyuanyun
     jedis:
       pool:
         max-active: 20
-    password: redis.mengyuanyun
-  boot:
-    admin:
-      client:
-        url: app-monitor:16202
 
 
 auth:
