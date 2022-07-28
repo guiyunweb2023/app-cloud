@@ -1,0 +1,8 @@
+server:
+  port: 16202
+spring:
+  application:
+    name: app-monitor
+  cloud:
+    nacos:
+      server-addr: 152.69.194.37:8848

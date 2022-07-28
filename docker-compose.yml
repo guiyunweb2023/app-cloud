@@ -17,6 +17,14 @@ services:
     container_name: app-admin
     networks:
       - common-net
+  app-monitor:
+    image: app-monitor
+    ports:
+      - "16202:16202"
+    build: ./app-infrastructure/app-monitor
+    container_name: app-monitor
+    networks:
+      - common-net
 networks:
   common-net:
     external: true
