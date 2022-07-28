@@ -8,6 +8,10 @@ spring:
   cloud:
     nacos:
       server-addr: some-nacos:8848
+  boot:
+    admin:
+      client:
+        url: app-monitor:16202
 feign:
   httpclient:
     enabled: false

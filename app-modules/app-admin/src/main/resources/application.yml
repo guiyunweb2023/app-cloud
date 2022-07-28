@@ -20,6 +20,10 @@ spring:
       pool:
         max-active: 20
     password: redis.mengyuanyun
+  boot:
+    admin:
+      client:
+        url: app-monitor:16202
 
 
 auth:
@@ -34,3 +38,4 @@ jwt:
   token-header: Authorization
   expire: 14400
   rsa-secret: xx1WET12^%3^(WE45
+
