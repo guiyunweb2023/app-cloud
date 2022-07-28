@@ -8,6 +8,14 @@ spring:
   cloud:
     nacos:
       server-addr: some-nacos:8848
+  redis:
+    host: some-redis
+    database: 1
+    port: 6379
+    password: redis.mengyuanyun
+    jedis:
+      pool:
+        max-active: 20
 feign:
   httpclient:
     enabled: false
