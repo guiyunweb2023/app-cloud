@@ -6,6 +6,8 @@ spring:
   cloud:
     nacos:
       server-addr: some-nacos:8848
+      discovery:
+        namespace: production
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
