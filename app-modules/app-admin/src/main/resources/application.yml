@@ -7,7 +7,7 @@ spring:
     nacos:
       server-addr: some-nacos:8848
       discovery:
-        namespace: production
+        namespace: a6985605-e887-4313-9388-15a9a4a4ddf1
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource

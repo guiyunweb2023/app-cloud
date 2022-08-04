@@ -9,7 +9,7 @@ spring:
     nacos:
       server-addr: some-nacos:8848
       discovery:
-        namespace: production
+        namespace: a6985605-e887-4313-9388-15a9a4a4ddf1
   redis:
     host: some-redis
     database: 1
